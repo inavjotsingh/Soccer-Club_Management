@@ -1,0 +1,48 @@
+﻿@model Clubs
+
+
+<head>
+    <script src="~/js/Js.js"></script>
+    <link href="~/css/menu.css" rel="stylesheet" />
+</head>
+
+<div>
+    <section class="add-club">
+        
+        <form asp-action="AddClubPage" asp-controller="Clubs" method="post" class="club-form row">
+
+            <div class="form-field col-lg-6">
+                <input class="input-text" type="text" asp-for="NameOfClub" placeholder="Name of Club" required>
+                <label class="label"></label>
+            </div>
+            <div class="form-field col-lg-6 ">
+                <input class="input-text" type="text" asp-for="NameOfCoach" placeholder="Name of Coach" required>
+                <label class="label"></label>
+            </div>
+            <div class="form-field col-lg-6 ">
+                <input class="input-text" type="text" asp-for="StadiumCapacity" placeholder="Stadium Capacity" required>
+                <label class="label"></label>
+            </div>
+            <div class="form-field col-lg-6 ">
+                <input class="input-text js-input" type="text" asp-for="NumberOfPlayers" placeholder="Numbers of Players" required>
+                <label class="label"></label>
+            </div>
+            <div class="form-field col-lg-6">
+                <input class="input-text js-input" type="text" asp-for="President" placeholder="President" required>
+                <label class="label"></label>
+            </div>
+            <div class="form-field col-lg-6">
+                <input class="input-text js-input" type="text" asp-for="LeagueParticipated" placeholder="Leagues Participated." required>
+                <label class="label"></label>
+            </div>
+
+            <div class="form-field col-lg-12">
+                <input class="button" type="submit" value="Save">
+            </div>
+            <div class="form-field col-lg-12">
+                <a class="button" asp-action="Index" asp-controller="Home">Cancel</a>
+            </div>
+        </form>
+    </section>
+</div>
+

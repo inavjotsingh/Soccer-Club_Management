@@ -1,0 +1,13 @@
+C:\Users\patad\Desktop\web Assignmnet\Ashish_P_301089716\Ashish_P_301089716\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+C:\Users\patad\Desktop\web Assignmnet\Ashish_P_301089716\Ashish_P_301089716\bin\Debug\netcoreapp2.0\Ashish_P_301089716.deps.json
+C:\Users\patad\Desktop\web Assignmnet\Ashish_P_301089716\Ashish_P_301089716\bin\Debug\netcoreapp2.0\Ashish_P_301089716.runtimeconfig.json
+C:\Users\patad\Desktop\web Assignmnet\Ashish_P_301089716\Ashish_P_301089716\bin\Debug\netcoreapp2.0\Ashish_P_301089716.runtimeconfig.dev.json
+C:\Users\patad\Desktop\web Assignmnet\Ashish_P_301089716\Ashish_P_301089716\bin\Debug\netcoreapp2.0\Ashish_P_301089716.dll
+C:\Users\patad\Desktop\web Assignmnet\Ashish_P_301089716\Ashish_P_301089716\obj\Debug\netcoreapp2.0\Ashish_P_301089716.AssemblyInfoInputs.cache
+C:\Users\patad\Desktop\web Assignmnet\Ashish_P_301089716\Ashish_P_301089716\obj\Debug\netcoreapp2.0\Ashish_P_301089716.AssemblyInfo.cs
+C:\Users\patad\Desktop\web Assignmnet\Ashish_P_301089716\Ashish_P_301089716\bin\Debug\netcoreapp2.0\Ashish_P_301089716.pdb
+C:\Users\patad\Desktop\web Assignmnet\Ashish_P_301089716\Ashish_P_301089716\obj\Debug\netcoreapp2.0\Ashish_P_301089716.dll
+C:\Users\patad\Desktop\web Assignmnet\Ashish_P_301089716\Ashish_P_301089716\obj\Debug\netcoreapp2.0\Ashish_P_301089716.pdb
+C:\Users\patad\Desktop\web Assignmnet\Ashish_P_301089716\Ashish_P_301089716\bin\Debug\netcoreapp2.0\libman.json
+C:\Users\patad\Desktop\web Assignmnet\Ashish_P_301089716\Ashish_P_301089716\obj\Debug\netcoreapp2.0\Ashish_P_301089716.csprojAssemblyReference.cache
+C:\Users\patad\Desktop\web Assignmnet\Ashish_P_301089716\Ashish_P_301089716\bin\Debug\netcoreapp2.0\appsettings.json

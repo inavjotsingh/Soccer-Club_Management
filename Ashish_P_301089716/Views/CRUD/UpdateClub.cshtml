@@ -1,0 +1,45 @@
+﻿@model Clubs
+@{
+    ViewData["Title"] = "UpdateClub";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1 class="title add-club">Update Club</h1>
+<div>
+    <section class="add-club">
+
+        <form asp-action="UpdateClub" asp-controller="CRUD" method="post" class="club-form row">
+
+            <div class="form-field col-lg-6">
+                <input class="input-text" type="text" asp-for="NameOfClub" value="@Model.NameOfClub" required>
+                <label class="label"></label>
+            </div>
+            <div class="form-field col-lg-6 ">
+                <input class="input-text" type="text" asp-for="NameOfCoach" value=@Model.NameOfCoach required>
+                <label class="label"></label>
+            </div>
+            <div class="form-field col-lg-6 ">
+                <input class="input-text" type="text" asp-for="StadiumCapacity" value=@Model.StadiumCapacity required>
+                <label class="label"></label>
+            </div>
+            <div class="form-field col-lg-6 ">
+                <input class="input-text js-input" type="text" asp-for="NumberOfPlayers" value=@Model.NumberOfPlayers required>
+                <label class="label"></label>
+            </div>
+            <div class="form-field col-lg-6">
+                <input class="input-text js-input" type="text" asp-for="President" value=@Model.President required>
+                <label class="label"></label>
+            </div>
+            <div class="form-field col-lg-6">
+                <input class="input-text js-input" type="text" asp-for="LeagueParticipated" value=@Model.LeagueParticipated required>
+                <label class="label"></label>
+            </div>
+
+            <div class="form-field col-lg-12">
+                <input class="button" type="submit" value="Update">
+            </div>
+            <div class="form-field col-lg-12">
+                <a class="button" asp-action="ManageClubs" asp-controller="Clubs">Cancel</a>
+            </div>
+        </form>
+    </section>
+</div>  

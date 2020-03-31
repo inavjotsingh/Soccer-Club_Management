@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Player>
+@{ IEnumerable<Clubs> clubslist = ViewData["clubs"] as IEnumerable<Clubs>;}
+
+    <div style="display:grid; grid-template-columns:100%; position:center;">
+        <a class="button" style="height:45px; background-color:#e6535a;">
+            <span>Add Player</span>
+        </a>
+    </div>
+    <div class="grid-container">
+
+
+        @foreach (var a in Model)
+        {
+            <section>
+                <div class="content">
+                    <header>
+                        <div class="image-shadow">
+                            <img src="~/images/ronaldo.jpg" style="width:200px;height:200px; border-radius:10px" />
+                        </div>
+                        <h3>Name - @a.Name</h3>
+                    </header>
+                    <h4>Age - @a.age</h4>
+                    <h4>Born - @a.DateOfBirth</h4>
+                    <h4>Match Played - @a.MatchPlayer</h4>
+                    <h4>Nationality - @a.Nationality</h4>
+                    <form method="post" asp-action="AssignClubtoPlayer" asp-controller="Players">
+                        <select name="clubId" class="selectpicker" data-style="btn-primary">
+                            <option class="bg-info dropdown-header" selected="selected">select club</option>
+                            @if (!(clubslist is null))
+                            {
+                                @foreach (Clubs c in clubslist)
+                                {
+                                    <option value="@c.ClubId"><h4>@c.NameOfClub</h4></option>
+                                }
+                            }
+                        </select>
+                        <input type="hidden" name="playerId" value="@a.PlayerId" />
+                        <h4>Club - @a.Club.NameOfClub</h4>
+                        @*<input class="button" value="Assign a club" type="submit" style="height:45px; width:135px; background-color:#46c768;">*@
+                        <button class="button" style="height:45px; width:135px;" type="submit"><span>Assign</span></button>
+                    </form>
+
+
+                    @*<span>Assign a club</span>*@
+
+                    <button class="button" style="height:45px; width:135px;">
+                        <span>Deregister.</span>
+                    </button>
+                </div>
+            </section>
+
+                }
+            
+
+
+        </div>
+

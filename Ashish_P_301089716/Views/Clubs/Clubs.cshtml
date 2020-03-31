@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Clubs>
+    <div class="grid-container">
+        @foreach (var club in Model)
+        {
+            <section>
+                <div class="content">
+                    <header>
+                        <div class="image-shadow">
+                            <img src="~/images/FC_Barcelona.png" style="width:200px;height:200px; border-radius:10px" />
+                        </div>
+                        <h2>Club: @club.NameOfClub</h2>
+                    </header>
+                    <h4>Head coach: @club.NameOfCoach</h4>
+
+                    <a class="button" style="height:45px; width:135px; position:center; background-color:#2bb0d9;" asp-action="ManageClubs" asp-route-clubID="@club.ClubId">
+                        <span>Details</span>
+                    </a>
+
+                </div>
+            </section>
+        }
+    </div>
+

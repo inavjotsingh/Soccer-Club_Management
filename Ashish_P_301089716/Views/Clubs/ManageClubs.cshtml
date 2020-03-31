@@ -1,0 +1,43 @@
+﻿@model Clubs
+    
+    <div class="grid-container " style="width: 500px; " >
+
+        <section class="col-2" >
+            <div class="content">
+                <header>
+                    <div class="image-shadow">
+                        <img src="~/images/FC_Barcelona.png" style="width:200px;height:200px; border-radius:10px" />
+                    </div>
+                    <h2>Club: @Model.NameOfClub</h2>
+                </header>
+                <h4>Head coach: @Model.NameOfCoach</h4>
+                <h4>Stadium Capacity: @Model.StadiumCapacity</h4>
+                <h4>Number Of Players: @Model.NumberOfPlayers</h4>
+                <h4>President: @Model.President</h4>
+                <h4>Leagues: @Model.LeagueParticipated</h4>
+                <h4>Players</h4>
+                <ul>
+
+                    @foreach (var v in Model.Players)
+                    {
+                        <li><h4 style="margin-block-start: -16px;">@v.Name</h4></li>
+}
+                </ul>
+
+                <a class="button" style="height:45px; width:80px; background-color:#46c768;" asp-action="UpdateClub" asp-route-clubId="@Model.ClubId" asp-controller="CRUD">
+                    <span>Edit</span>
+                </a>
+                <a class="button" style="height:45px; width:80px;" asp-action="DeleteClub" asp-controller="CRUD" asp-route-clubId="@Model.ClubId">
+                    <span>Delete</span>
+                </a>
+                <a class="button" style="height:45px; width:100px;" asp-action="ManagePlayers" asp-controller="Players">
+                    <span>Manage Players</span>
+                </a>
+            </div>
+        </section>
+        </div>
+        
+                
+
+            
+

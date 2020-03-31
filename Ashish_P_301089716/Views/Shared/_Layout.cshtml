@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/menu.css" rel="stylesheet" />
+    <script src="~/js/Js.js"></script>
+</head>
+<body class="bgaddclub">
+    <div>
+        <div class="navbar">
+            <a class="btn btn-primary" asp-action="Index" asp-controller="Home">Home</a>
+            <a class="btn btn-primary" asp-action="Clubs" asp-controller="Clubs">Clubs</a>
+            <a class="btn btn-primary" asp-action="ManagePlayers" asp-controller="Players">Players</a>
+            <a class="btn btn-primary" asp-action="AddClubPage" asp-controller="Clubs">Add Club</a>
+            <a class="btn btn-primary" asp-action="AboutUs" asp-controller="Home">About us</a>
+        </div>
+        @RenderBody()
+    </div>
+</body>
+</html>
